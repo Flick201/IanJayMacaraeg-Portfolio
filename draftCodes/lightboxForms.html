@@ -1,0 +1,140 @@
+<script>
+(function() {
+  // -------------------------------------------------------
+  // EDIT THESE — one entry per button, in page order
+  // -------------------------------------------------------
+  const buttonTexts = [
+    "In - Person Workshop\nDate: March 21, 2026\nParticipants: 1\n\n$1500",
+    "In - Person Workshop\nDate: March 22, 2026\nParticipants: 1\n\n$1500",
+    "In - Person Workshop\nDate: March 23, 2026\nParticipants: 1\n\n$1500",
+    "In - Person Workshop\nDate: March 24, 2026\nParticipants: 1\n\n$1500",
+    "In - Person Workshop\nDate: March 25, 2026\nParticipants: 1\n\n$1500",
+  ];
+  // -------------------------------------------------------
+
+  const BUTTON_SELECTOR = '.lightbox-handle.sqs-system-button.sqs-editable-button.sqs-button-element--primary';
+  const TEXTAREA_ID     = 'textarea-0236d423-9560-4eb0-82d6-a3419cb9502d-field';
+  const DATA_ATTR       = 'data-ascendyx-index';
+
+  let activeText    = null;
+  let lockInterval  = null;
+  let buttonsTagged = false; // guard against double-tagging
+
+  // --- 1. Tag every lightbox button with a stable index (once only) ---
+  function tagButtons() {
+    if (buttonsTagged) return;
+    const buttons = document.querySelectorAll(BUTTON_SELECTOR);
+    if (buttons.length === 0) return; // not ready yet, will retry
+    buttons.forEach((btn, i) => btn.setAttribute(DATA_ATTR, i));
+    buttonsTagged = true;
+    console.log(`[AscendyX] Tagged ${buttons.length} lightbox button(s).`);
+  }
+
+  // --- 2. Lock the textarea to the given text ---
+  function applyTextareaLock(text) {
+    const textarea = document.querySelector(`textarea#${TEXTAREA_ID}`);
+    if (!textarea) return false;
+    if (textarea.value !== text) textarea.value = text;
+    textarea.readOnly = true;
+    textarea.style.setProperty('overflow',         'hidden',      'important');
+    textarea.style.setProperty('resize',           'none',        'important');
+    textarea.style.setProperty('pointer-events',   'none',        'important');
+    textarea.style.setProperty('height',           '135px',       'important');
+    textarea.style.setProperty('background-color', 'transparent', 'important');
+    textarea.style.setProperty('user-select',      'none',        'important');
+    return true;
+  }
+
+  // --- 3. Watch the DOM for the textarea to appear, then lock it ---
+  function waitForTextareaAndLock(text) {
+    activeText = text;
+    if (lockInterval) clearInterval(lockInterval);
+
+    // First try immediately in case it's already there
+    if (applyTextareaLock(text)) {
+      console.log('[AscendyX] Textarea found immediately.');
+    }
+
+    // MutationObserver watches for the textarea being injected into the DOM
+    const formObserver = new MutationObserver(() => {
+      const textarea = document.querySelector(`textarea#${TEXTAREA_ID}`);
+      if (textarea) {
+        applyTextareaLock(text);
+        console.log('[AscendyX] Textarea detected via observer — text applied.');
+      }
+    });
+
+    formObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Sustained lock interval to prevent Squarespace from resetting the value
+    lockInterval = setInterval(() => {
+      if (activeText) applyTextareaLock(activeText);
+    }, 300);
+
+    // Disconnect the form observer after 5s (form is definitely loaded by then)
+    setTimeout(() => formObserver.disconnect(), 5000);
+  }
+
+  // --- 4. Stop the lock loop ---
+  function stopLock() {
+    if (lockInterval) clearInterval(lockInterval);
+    lockInterval = null;
+    activeText   = null;
+  }
+
+  // --- 5. Event delegation — catch clicks on any tagged button or its children ---
+  document.addEventListener('click', function(e) {
+    const btn = e.target.closest(`[${DATA_ATTR}]`);
+    if (!btn) return;
+
+    const index = parseInt(btn.getAttribute(DATA_ATTR), 10);
+    const text  = buttonTexts[index];
+
+    if (text !== undefined) {
+      console.log(`[AscendyX] Button ${index} clicked → waiting for textarea...`);
+      waitForTextareaAndLock(text);
+    } else {
+      console.warn(`[AscendyX] Button ${index} clicked but no text defined for this index.`);
+    }
+  }, true);
+
+  // --- 6. Watch for lightbox closing and stop the lock ---
+  function observeLightboxClose() {
+    const observer = new MutationObserver(() => {
+      const lightbox = document.querySelector('.lightbox-container, .sqs-lightbox, [class*="lightbox-overlay"]');
+      if (!lightbox && activeText) stopLock();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+  // --- Init ---
+  function init() {
+    tagButtons();
+    observeLightboxClose();
+
+    // Fallback: if buttons weren't ready on DOMContentLoaded, retry on full load
+    if (!buttonsTagged) {
+      window.addEventListener('load', tagButtons);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
+</script>
+
+<style>
+  .form-wrapper .react-form-contents {
+    margin-top: 0px !important;
+  }
+  #textarea-0236d423-9560-4eb0-82d6-a3419cb9502d-field {
+    pointer-events: none !important;
+    overflow: hidden !important;
+    background: none !important;
+    border-radius: 0px !important;
+  }
+</style>

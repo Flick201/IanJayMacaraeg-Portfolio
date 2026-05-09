@@ -1,0 +1,135 @@
+<style>
+/* Mobile 2-Column Product Layout with Portrait Images for Both Sections */
+@media only screen and (max-width: 768px) {
+  /* Targeted blocks: Section 1 and Section 2 */
+  #block-69d83fffc3927f3962d20ff2 .summary-item-list,
+  #block-ed432ee969c9dbae8b52 .summary-item-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 20px !important;
+    row-gap: 20px !important;
+  }
+
+  /* Item Reset */
+  #block-69d83fffc3927f3962d20ff2 .summary-item,
+  #block-ed432ee969c9dbae8b52 .summary-item {
+    width: auto !important;
+    float: none !important;
+    margin: 0 !important;
+  }
+
+  /* Centering the last item if it's alone on a row (odd count) */
+  #block-69d83fffc3927f3962d20ff2 .summary-item:last-child:nth-child(odd),
+  #block-ed432ee969c9dbae8b52 .summary-item:last-child:nth-child(odd) {
+    grid-column: 1 / span 2 !important;
+    justify-self: center !important;
+    width: 50% !important;
+  }
+
+  /* Portrait Thumbnail Styles (3:4 ratio) */
+  #block-69d83fffc3927f3962d20ff2 .summary-thumbnail-container,
+  #block-69d83fffc3927f3962d20ff2 .summary-thumbnail,
+  #block-ed432ee969c9dbae8b52 .summary-thumbnail-container,
+  #block-ed432ee969c9dbae8b52 .summary-thumbnail {
+    aspect-ratio: 3 / 4 !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
+  /* Image Fill (Cover) Mode */
+  #block-69d83fffc3927f3962d20ff2 .summary-thumbnail img,
+  #block-ed432ee969c9dbae8b52 .summary-thumbnail img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+}
+</style>
+
+<style>
+/* Hide Squarespace’s default SVG icons */
+.user-items-list-carousel__arrow-button svg {
+  display: none !important;
+}
+
+/* Inject custom chevron arrows */
+.user-items-list-carousel__arrow-button--left::before {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='white'><path d='M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z'/></svg>");
+
+}
+
+.user-items-list-carousel__arrow-button--right::before {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='white'><path d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/></svg>");
+  display: inline-block;
+}
+
+/* Optional hover effect */
+.user-items-list-carousel__arrow-button:hover::before {
+  filter: drop-shadow(0 0 4px 
+    #ffffff); /* brand accent glow */
+}
+
+
+/* Kill the background layer behind the arrow icons */
+.user-items-list-carousel .user-items-list-carousel__arrow-icon-background {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 1. Force the arrow wrappers to stay visible on mobile/tablet (below 991px) */
+@media screen and (max-width: 768px) {
+  .user-items-list-carousel .desktop-arrows {
+    display: block !important;
+  }
+}
+
+/* 2. Hide Squarespace’s default SVG icons */
+.user-items-list-carousel__arrow-button svg {
+  display: none !important;
+}
+
+/* 3. Inject and size custom chevron arrows with WHITE color (%23ffffff) */
+.user-items-list-carousel__arrow-button--left::before,
+.user-items-list-carousel__arrow-button--right::before {
+  width: 32px;
+  height: 32px;
+  display: block;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.user-items-list-carousel__arrow-button--left::before {
+  content: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z'/%3E%3C/svg%3E") !important;
+}
+
+.user-items-list-carousel__arrow-button--right::before {
+  content: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/%3E%3C/svg%3E") !important;
+}
+
+/* 4. Ensure buttons have a clickable size and are centered */
+.user-items-list-carousel__arrow-button {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+}
+
+/* 5. Optional hover effect with white glow */
+.user-items-list-carousel__arrow-button:hover::before {
+  filter: drop-shadow(0 0 4px #ffffff) !important;
+}
+
+/* 6. Remove default Squarespace background circles/layers */
+.user-items-list-carousel .user-items-list-carousel__arrow-icon-background {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+</style>

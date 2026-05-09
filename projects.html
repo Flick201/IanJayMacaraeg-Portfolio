@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="page-header-inner">
+            <p class="hero-eyebrow">My Work</p>
+            <h1>Selected <em>Projects</em></h1>
+            <p class="page-header-sub">A curated collection of edits, designs, and builds.</p>
+        </div>
+        <div class="page-header-bg-word">WORK</div>
+    </header>
+
+    <!-- SECTION 1: MEDIA GALLERY -->
+    <section class="proj-section proj-gallery-section">
+        <div class="proj-section-header">
+            <div>
+                <span class="section-label">Gallery</span>
+                <h2>Images &amp; <em>Videos</em></h2>
+            </div>
+            <div class="media-toggle" role="group">
+                <button class="media-toggle-btn active" data-panel="images">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    Images
+                </button>
+                <button class="media-toggle-btn" data-panel="videos">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Videos
+                </button>
+            </div>
+        </div>
+
+        <!-- IMAGES PANEL -->
+        <div class="media-panel" id="imagesPanel">
+            <div class="gallery-cat-nav">
+                <a href="#cat-character" class="cat-nav-pill">2D Art</a>
+                <a href="#cat-photo" class="cat-nav-pill">Photography</a>
+                <a href="#cat-certificate" class="cat-nav-pill">Certificates</a>
+                <a href="#cat-logo" class="cat-nav-pill">Logo Design</a>
+                <a href="#cat-graphics" class="cat-nav-pill">Graphics</a>
+            </div>
+
+            <!-- 01: 2D Character Design Art -->
+            <div class="gallery-cat reveal" id="cat-character">
+                <div class="gallery-cat-header">
+                    <span class="gallery-cat-num">01</span>
+                    <div>
+                        <h3>2D Character Design Art</h3>
+                        <p class="gallery-cat-sub">Original character illustrations</p>
+                    </div>
+                </div>
+                <div class="gallery-cat-grid gallery-cat-grid--row">
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/character1.png" alt="Character 1" loading="lazy"><div class="gcat-overlay"><span>Character 01</span></div></div>
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/character2.png" alt="Character 2" loading="lazy"><div class="gcat-overlay"><span>Character 02</span></div></div>
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/character3.png" alt="Character 3" loading="lazy"><div class="gcat-overlay"><span>Character 03</span></div></div>
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/character4.png" alt="Character 4" loading="lazy"><div class="gcat-overlay"><span>Character 04</span></div></div>
+                </div>
+                <p class="gallery-cat-desc">These are the game characters that I designed originally, each based on the developers of the game. Each character wears a Pangasinan State University uniform to represent the campus, which makes the originality of the game more unique.</p>
+            </div>
+
+            <!-- 02: Photography & Lightroom Edits -->
+            <div class="gallery-cat reveal" id="cat-photo">
+                <div class="gallery-cat-header">
+                    <span class="gallery-cat-num">02</span>
+                    <div>
+                        <h3>Photography &amp; Lightroom Edits</h3>
+                        <p class="gallery-cat-sub">Captured &amp; colour-graded moments</p>
+                    </div>
+                </div>
+                <div class="gallery-cat-grid gallery-cat-grid--photo">
+                    <div class="gcat-item gcat-item--featured"><img src="uploads/images/landscape/LIGHTROOM EDIT 1.jpg" alt="Photography 1" loading="lazy"><div class="gcat-overlay"><span>Photo 01</span></div></div>
+                    <div class="gcat-item gcat-item--featured"><img src="uploads/images/landscape/LIGHTROOM EDIT 2.jpg" alt="Photography 2" loading="lazy"><div class="gcat-overlay"><span>Photo 02</span></div></div>
+                    <div class="gcat-item"><img src="uploads/images/portrait5.jpg" alt="Photography 3" loading="lazy"><div class="gcat-overlay"><span>Photo 03</span></div></div>
+                    <div class="gcat-item"><img src="uploads/images/portrait6.jpg" alt="Photography 4" loading="lazy"><div class="gcat-overlay"><span>Photo 04</span></div></div>
+                    <div class="gcat-item"><img src="uploads/images/portrait7.jpg" alt="Photography 5" loading="lazy"><div class="gcat-overlay"><span>Photo 05</span></div></div>
+                    <div class="gcat-item"><img src="uploads/images/portrait8.jpg" alt="Photography 6" loading="lazy"><div class="gcat-overlay"><span>Photo 06</span></div></div>
+                    <div class="gcat-item"><img src="uploads/images/portrait9.jpg" alt="Photography 7" loading="lazy"><div class="gcat-overlay"><span>Photo 07</span></div></div>
+                </div>
+            </div>
+
+            <!-- 03: Certificate Design -->
+            <div class="gallery-cat reveal" id="cat-certificate">
+                <div class="gallery-cat-header">
+                    <span class="gallery-cat-num">03</span>
+                    <div>
+                        <h3>Certificate Design</h3>
+                        <p class="gallery-cat-sub">Official document layouts &amp; designs</p>
+                    </div>
+                </div>
+                <div class="gallery-cat-grid gallery-cat-grid--pair">
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/CERTIFICATE DESIGN DRAFT EDIT.jfif" alt="Certificate 1" loading="lazy"><div class="gcat-overlay"><span>Certificate 01</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/CERTIFICATE DESIGN DRAFT EDIT 2.jfif" alt="Certificate 2" loading="lazy"><div class="gcat-overlay"><span>Certificate 02</span></div></div>
+                </div>
+                <p class="gallery-cat-desc">These certificate draft designs were created during my internship days and used in official events.</p>
+            </div>
+
+            <!-- 04: Logo Design -->
+            <div class="gallery-cat reveal" id="cat-logo">
+                <div class="gallery-cat-header">
+                    <span class="gallery-cat-num">04</span>
+                    <div>
+                        <h3>Logo Design Art</h3>
+                        <p class="gallery-cat-sub">Brand marks &amp; identity systems</p>
+                    </div>
+                </div>
+                <div class="gallery-cat-grid gallery-cat-grid--grid">
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/landscape/GROUP4_MT101_BSIT2-1.png" alt="Logo 1" loading="lazy"><div class="gcat-overlay"><span>Logo 01</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/landscape/LOGO TITLE.png" alt="Logo 2" loading="lazy"><div class="gcat-overlay"><span>Logo 02</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/landscape/LOGO.png" alt="Logo 3" loading="lazy"><div class="gcat-overlay"><span>Logo 03</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/4.png" alt="Logo 4" loading="lazy"><div class="gcat-overlay"><span>Logo 04</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/5.png" alt="Logo 5" loading="lazy"><div class="gcat-overlay"><span>Logo 05</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/6.png" alt="Logo 6" loading="lazy"><div class="gcat-overlay"><span>Logo 06</span></div></div>
+                </div>
+            </div>
+
+            <!-- 05: Graphics & Social Media -->
+            <div class="gallery-cat reveal" id="cat-graphics">
+                <div class="gallery-cat-header">
+                    <span class="gallery-cat-num">05</span>
+                    <div>
+                        <h3>Graphics &amp; Social Media</h3>
+                        <p class="gallery-cat-sub">Posters, banners &amp; digital assets</p>
+                    </div>
+                </div>
+                <div class="gallery-cat-grid gallery-cat-grid--masonry">
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/portrait1.jpg" alt="Graphic 1" loading="lazy"><div class="gcat-overlay"><span>Graphic 01</span></div></div>
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/portrait2.jpg" alt="Graphic 2" loading="lazy"><div class="gcat-overlay"><span>Graphic 02</span></div></div>
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/portrait3.jpg" alt="Graphic 3" loading="lazy"><div class="gcat-overlay"><span>Graphic 03</span></div></div>
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/portrait4.png" alt="Graphic 4" loading="lazy"><div class="gcat-overlay"><span>Graphic 04</span></div></div>
+                    <div class="gcat-item gcat-item--portrait"><img src="uploads/images/9.png" alt="Graphic 5" loading="lazy"><div class="gcat-overlay"><span>Graphic 05</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/DigitalArt_MacaraegIanJayP.jpg" alt="Graphic 6" loading="lazy"><div class="gcat-overlay"><span>Graphic 06</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/EAT O_CLOCK BANNER.png" alt="Graphic 7" loading="lazy"><div class="gcat-overlay"><span>Graphic 07</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/EAT O_CLOCK BROCHURE(Front).png" alt="Graphic 8" loading="lazy"><div class="gcat-overlay"><span>Graphic 08</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/EAT O_CLOCK BROCHURE(Back).png" alt="Graphic 9" loading="lazy"><div class="gcat-overlay"><span>Graphic 09</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/1.png" alt="Graphic 10" loading="lazy"><div class="gcat-overlay"><span>Graphic 10</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/2.png" alt="Graphic 11" loading="lazy"><div class="gcat-overlay"><span>Graphic 11</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/7.png" alt="Graphic 12" loading="lazy"><div class="gcat-overlay"><span>Graphic 12</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/8.png" alt="Graphic 13" loading="lazy"><div class="gcat-overlay"><span>Graphic 13</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/LANDSCAPE POSTER CENTERED REVISED 2.jpg" alt="Graphic 14" loading="lazy"><div class="gcat-overlay"><span>Graphic 14</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/LOADING SCREEN.jpg" alt="Graphic 15" loading="lazy"><div class="gcat-overlay"><span>Graphic 15</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/MACARAEG IAN JAY P(BSIT 1-1).jpg" alt="Graphic 16" loading="lazy"><div class="gcat-overlay"><span>Graphic 16</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/TARPAULIN DESIGN DRAFT EDIT.jpg" alt="Graphic 17" loading="lazy"><div class="gcat-overlay"><span>Graphic 17</span></div></div>
+                    <div class="gcat-item gcat-item--landscape"><img src="uploads/images/landscape/VEXEL ART PC.jpg" alt="Graphic 18" loading="lazy"><div class="gcat-overlay"><span>Graphic 18</span></div></div>
+                    <div class="gcat-item gcat-item--square"><img src="uploads/images/squares/3.png" alt="Graphic 19" loading="lazy"><div class="gcat-overlay"><span>Graphic 19</span></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEOS PANEL -->
+        <div class="media-panel hidden" id="videosPanel">
+
+            <!-- Portrait Videos -->
+            <div class="gallery-cat reveal" id="vid-portrait">
+                <div class="gallery-cat-header">
+                    <span class="gallery-cat-num">01</span>
+                    <div>
+                        <h3>Portrait Videos</h3>
+                        <p class="gallery-cat-sub">Vertical content for social platforms</p>
+                    </div>
+                </div>
+                <div class="vid-lib-grid vid-lib-grid--portrait">
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX - Humorous Edit 1.mp4" data-title="Humorous Edit 1" data-desc="AscendyX creative edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX - Humorous Edit 1.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">01</span><div><h5>Humorous Edit 1</h5><p>AscendyX creative edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX - Humorous Edit 2.mp4" data-title="Humorous Edit 2" data-desc="AscendyX creative edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX - Humorous Edit 2.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">02</span><div><h5>Humorous Edit 2</h5><p>AscendyX creative edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX - Humorous Edit 3.mp4" data-title="Humorous Edit 3" data-desc="AscendyX creative edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX - Humorous Edit 3.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">03</span><div><h5>Humorous Edit 3</h5><p>AscendyX creative edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Educational Reel - How to Launch With Limited Budget.mp4" data-title="How to Launch With Limited Budget" data-desc="AscendyX educational reel.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Educational Reel - How to Launch With Limited Budget.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">04</span><div><h5>How to Launch With Limited Budget</h5><p>AscendyX educational reel.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 1 - How to Identify Your Ideal Customer.mp4" data-title="How to Identify Your Ideal Customer" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 1 - How to Identify Your Ideal Customer.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">05</span><div><h5>How to Identify Your Ideal Customer</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 2 - The Real Reason Your Ads Don't Work.mp4" data-title="The Real Reason Your Ads Don't Work" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 2 - The Real Reason Your Ads Don't Work.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">06</span><div><h5>The Real Reason Your Ads Don't Work</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 3 - Why Copying Big Brands Will Kill Your Marketing.mp4" data-title="Why Copying Big Brands Will Kill Your Marketing" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 3 - Why Copying Big Brands Will Kill Your Marketing.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">07</span><div><h5>Why Copying Big Brands Will Kill Your Marketing</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 4 - Why Your Website Isn't Selling.mp4" data-title="Why Your Website Isn't Selling" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 4 - Why Your Website Isn't Selling.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">08</span><div><h5>Why Your Website Isn't Selling</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 5 - Why Smart Businesses Automate.mp4" data-title="Why Smart Businesses Automate" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 5 - Why Smart Businesses Automate.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">09</span><div><h5>Why Smart Businesses Automate</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 6 - How Ads Find You Online.mp4" data-title="How Ads Find You Online" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 6 - How Ads Find You Online.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">10</span><div><h5>How Ads Find You Online</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 7 - Is Your Website Mobile-Friendly Here's Why It Matters.mp4" data-title="Is Your Website Mobile-Friendly?" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 7 - Is Your Website Mobile-Friendly Here's Why It Matters.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">11</span><div><h5>Is Your Website Mobile-Friendly?</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/AscendyX Video Content 8 - Branding The Secret to Standing Out.mp4" data-title="Branding: The Secret to Standing Out" data-desc="AscendyX video content.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/AscendyX Video Content 8 - Branding The Secret to Standing Out.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">12</span><div><h5>Branding: The Secret to Standing Out</h5><p>AscendyX video content.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/When Chaos Meets Strategy.mp4" data-title="When Chaos Meets Strategy" data-desc="Creative edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/When Chaos Meets Strategy.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">13</span><div><h5>When Chaos Meets Strategy</h5><p>Creative edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/When Nothing's Built to Last.mp4" data-title="When Nothing's Built to Last" data-desc="Creative edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/When Nothing's Built to Last.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">14</span><div><h5>When Nothing's Built to Last</h5><p>Creative edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="uploads/videos/MacaraegIanJay_ParaGuard.mp4" data-title="ParaGuard" data-desc="Original project video.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="uploads/videos/MacaraegIanJay_ParaGuard.mp4" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">15</span><div><h5>ParaGuard</h5><p>Original project video.</p></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landscape Videos -->
+            <div class="gallery-cat reveal" id="vid-landscape">
+                <div class="gallery-cat-header">
+                    <span class="gallery-cat-num">02</span>
+                    <div>
+                        <h3>Landscape Videos</h3>
+                        <p class="gallery-cat-sub">Widescreen edits for YouTube &amp; presentations</p>
+                    </div>
+                </div>
+                <div class="vid-lib-grid vid-lib-grid--landscape">
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1H5yhVERdQIEiOC2Qf5VftQztlJbm8Oz9/view?usp=drive_link" data-title="Cabling &amp; File Transfer" data-desc="Using crossover cable edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1H5yhVERdQIEiOC2Qf5VftQztlJbm8Oz9&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">01</span><div><h5>Cabling &amp; File Transfer</h5><p>Using crossover cable edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1bw83LVseHW7u_7l7OGlArFuYzuef6vtm/view?usp=drive_link" data-title="Campaign Program" data-desc="Event campaign edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1bw83LVseHW7u_7l7OGlArFuYzuef6vtm&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">02</span><div><h5>Campaign Program</h5><p>Event campaign edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1rn7wOFjzX9ojnB_09izfcr39RHSHV0qG/view?usp=drive_link" data-title="Climate Change &amp; Environmental Awareness" data-desc="Awareness campaign edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1rn7wOFjzX9ojnB_09izfcr39RHSHV0qG&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">03</span><div><h5>Climate Change &amp; Environmental Awareness</h5><p>Awareness campaign edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1azPZRusGBoxnm2_kGB_iStVNbM5-4c1y/view?usp=drive_link" data-title="Cybersecurity Foundation" data-desc="Educational edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1azPZRusGBoxnm2_kGB_iStVNbM5-4c1y&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">04</span><div><h5>Cybersecurity Foundation</h5><p>Educational edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1azPZRusGBoxnm2_kGB_iStVNbM5-4c1y/view?usp=drive_link" data-title="Discussion Report: Heapsort" data-desc="Academic presentation edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/file/d/1kkkB61dnpX39BsHCTNj4VoCXva7goFUk/view?usp=drive_link" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">05</span><div><h5>Discussion Report: Heapsort</h5><p>Academic presentation edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1kkkB61dnpX39BsHCTNj4VoCXva7goFUk/view?usp=drive_link" data-title="Eat O'Clock Video Ad" data-desc="Product advertisement edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1kkkB61dnpX39BsHCTNj4VoCXva7goFUk&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">06</span><div><h5>Eat O'Clock Video Ad</h5><p>Product advertisement edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1lykKuZY_6GbiHPOimNlgFUSC7hIyk7QW/view?usp=drive_link" data-title="Environmental Awareness: Tree Planting" data-desc="Community event edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1lykKuZY_6GbiHPOimNlgFUSC7hIyk7QW&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">07</span><div><h5>Environmental Awareness: Tree Planting</h5><p>Community event edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1SoXEAVPN3aWN8R6tPXimQPnAaQ6_0j6F/view?usp=drive_link" data-title="Local &amp; Global Communication" data-desc="Multicultural setting edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1SoXEAVPN3aWN8R6tPXimQPnAaQ6_0j6F&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">08</span><div><h5>Local &amp; Global Communication</h5><p>Multicultural setting edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1h5325wttcJof4V6el3oPVvcr20fZQYed/view?usp=drive_link" data-title="Mental Health Awareness" data-desc="Awareness campaign edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1h5325wttcJof4V6el3oPVvcr20fZQYed&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">09</span><div><h5>Mental Health Awareness</h5><p>Awareness campaign edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/14JsewevkAYcIS_mR7GzG_ZFyfI1yLPUM/view?usp=drive_link" data-title="Patterns on Our World" data-desc="Educational documentary edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=14JsewevkAYcIS_mR7GzG_ZFyfI1yLPUM&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">10</span><div><h5>Patterns on Our World</h5><p>Educational documentary edit.</p></div></div>
+                    </div>
+                    <div class="vid-lib-item" data-src="https://drive.google.com/file/d/1U8VJ21UHP9ueseMVe9zpJ_mU_dwufBuH/view?usp=drive_link" data-title="United Nations: Philippines" data-desc="Documentary-style edit.">
+                        <div class="vid-lib-thumb"><video preload="metadata" muted playsinline><source src="https://drive.google.com/thumbnail?id=1U8VJ21UHP9ueseMVe9zpJ_mU_dwufBuH&sz=w400" type="video/mp4"></video><div class="vid-lib-play"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+                        <div class="vid-lib-info"><span class="vid-lib-num">11</span><div><h5>United Nations: Philippines</h5><p>Documentary-style edit.</p></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: OTHER WORKS -->
+    <section class="proj-section other-works-section">
+        <div class="proj-section-header">
+            <div>
+                <span class="section-label">Other Works</span>
+                <h2>Slides &amp; <em>Documents</em></h2>
+            </div>
+        </div>
+
+        <div class="works-tabs">
+            <button class="works-tab active" data-works="pptx">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                PowerPoint
+            </button>
+            <button class="works-tab" data-works="pdf">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                PDF
+            </button>
+        </div>
+
+        <!-- POWERPOINT PANEL -->
+        <div class="works-panel" id="pptxPanel">
+            <div class="doc-grid">
+                <div class="doc-card reveal">
+                    <div class="doc-preview doc-preview--pptx">
+                        <img src="uploads/docs/DEPARTMENT OF ECONOMY PLANNING AND DEVELOPMENT.png" alt="Presentation 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="doc-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span>.pptx</span></div>
+                    </div>
+                    <div class="doc-info">
+                        <span class="doc-type-badge pptx-badge">PowerPoint</span>
+                        <h4>DEPARTMENT OF ECONOMY PLANNING AND DEVELOPMENT</h4>
+                        <p>This is a brief presentation of our intern journey at the Department of Economy, Planning and Development.</p>
+                        <div class="doc-actions">
+                            <a href="uploads/docs/DEPARTMENT OF ECONOMY PLANNING AND DEVELOPMENT.pptx" download class="doc-btn doc-btn--download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</a>
+                            <a href="https://view.officeapps.live.com/op/embed.aspx?src=YOUR_GITHUB_PAGES_URL/uploads/docs/DEPARTMENT OF ECONOMY PLANNING AND DEVELOPMENT.pptx" target="_blank" class="doc-btn doc-btn--view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PDF PANEL -->
+        <div class="works-panel hidden" id="pdfPanel">
+            <div class="pdf-grid">
+                <div class="pdf-card reveal">
+                    <div class="pdf-embed-wrap">
+                        <iframe src="uploads/docs/MacaraegIanJayP.pdf" title="PDF 1" loading="lazy"></iframe>
+                        <div class="pdf-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><p>PDF preview unavailable.</p></div>
+                    </div>
+                    <div class="pdf-info">
+                        <span class="doc-type-badge pdf-badge">PDF</span>
+                        <h4>My Resume</h4>
+                        <p>This is a copy of my updated resume.</p>
+                        <div class="doc-actions">
+                            <a href="uploads/docs/MacaraegIanJayP.pdf" target="_blank" class="doc-btn doc-btn--view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Open PDF</a>
+                            <a href="uploads/docs/MacaraegIanJayP.pdf" download class="doc-btn doc-btn--download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pdf-card reveal">
+                    <div class="pdf-embed-wrap">
+                        <iframe src="uploads/docs/AsxcendyX.pdf" title="PDF 2" loading="lazy"></iframe>
+                        <div class="pdf-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><p>PDF preview unavailable.</p></div>
+                    </div>
+                    <div class="pdf-info">
+                        <span class="doc-type-badge pdf-badge">PDF</span>
+                        <h4>AscendyX Magazine - Sample</h4>
+                        <p>This is a sample issue of AscendyX Magazine.</p>
+                        <div class="doc-actions">
+                            <a href="uploads/docs/AsxcendyX.pdf" target="_blank" class="doc-btn doc-btn--view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Open PDF</a>
+                            <a href="uploads/docs/AsxcendyX.pdf" download class="doc-btn doc-btn--download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+        <div class="video-modal-inner">
+            <button class="video-modal-close" id="videoModalClose">&#10005;</button>
+            <div class="video-modal-player" id="videoModalPlayer">
+                <!-- populated dynamically — local: <video>, Drive: <iframe> -->
+            </div>
+            <div class="video-modal-info">
+                <h4 id="modalVideoTitle"></h4>
+                <p id="modalVideoDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightboxClose">&#10005;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+        <div class="lightbox-img-wrap">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-logo">Portfolio</span>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="footer-copy">&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+
+        // Media toggle (Images / Videos)
+        document.querySelectorAll('.media-toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.media-toggle-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                document.querySelectorAll('.media-panel').forEach(p => p.classList.add('hidden'));
+                document.getElementById(btn.dataset.panel + 'Panel').classList.remove('hidden');
+            });
+        });
+
+        // Works sub-tabs (PPTX / PDF)
+        document.querySelectorAll('.works-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.works-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                document.querySelectorAll('.works-panel').forEach(p => p.classList.add('hidden'));
+                document.getElementById(tab.dataset.works + 'Panel').classList.remove('hidden');
+            });
+        });
+
+        // Video modal — supports local files AND Google Drive links
+        const videoModal   = document.getElementById('videoModal');
+        const modalPlayer  = document.getElementById('videoModalPlayer');
+        const modalTitle   = document.getElementById('modalVideoTitle');
+        const modalDesc    = document.getElementById('modalVideoDesc');
+
+        function isDriveLink(src) {
+            return src.includes('drive.google.com');
+        }
+
+        function openVideoModal(src, title, desc) {
+            // Drive video → iframe with Google's own player
+            // Local video → standard HTML5 <video>
+            if (isDriveLink(src)) {
+                // Ensure we always use the /preview embed URL
+                const previewSrc = src.replace('/view', '/preview').replace('/edit', '/preview');
+                modalPlayer.innerHTML =
+                    '<iframe src="' + previewSrc + '" allowfullscreen allow="autoplay; encrypted-media" frameborder="0"></iframe>';
+            } else {
+                modalPlayer.innerHTML =
+                    '<video controls playsinline autoplay>' +
+                    '<source src="' + src + '" type="video/mp4"></video>';
+            }
+
+            modalTitle.textContent = title;
+            modalDesc.textContent  = desc;
+            videoModal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            // Clearing innerHTML stops both video playback and iframe loading
+            modalPlayer.innerHTML = '';
+            videoModal.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('videoModalClose').addEventListener('click', closeVideoModal);
+        document.getElementById('videoModalBackdrop').addEventListener('click', closeVideoModal);
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && videoModal.classList.contains('open')) closeVideoModal();
+        });
+
+        document.querySelectorAll('.vid-lib-item').forEach(item => {
+            item.addEventListener('click', () => {
+                openVideoModal(
+                    item.dataset.src,
+                    item.dataset.title,
+                    item.dataset.desc
+                );
+            });
+        });
+
+        // Image lightbox
+        const gItems = Array.from(document.querySelectorAll('.gcat-item'));
+        let lbIndex = 0;
+
+        function openLightbox(i) {
+            lbIndex = i;
+            updateLightbox();
+            document.getElementById('lightbox').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function updateLightbox() {
+            const img     = gItems[lbIndex].querySelector('img');
+            const caption = gItems[lbIndex].querySelector('.gcat-overlay span');
+            document.getElementById('lightboxImg').src = img.src;
+            document.getElementById('lightboxImg').alt = img.alt;
+            document.getElementById('lightboxCaption').textContent = caption ? caption.textContent : '';
+            document.getElementById('lightboxCounter').textContent = (lbIndex + 1) + ' / ' + gItems.length;
+        }
+
+        gItems.forEach((item, i) => {
+            item.style.cursor = 'zoom-in';
+            item.addEventListener('click', () => openLightbox(i));
+        });
+
+        document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+        document.getElementById('lightboxPrev').addEventListener('click', () => { lbIndex = (lbIndex - 1 + gItems.length) % gItems.length; updateLightbox(); });
+        document.getElementById('lightboxNext').addEventListener('click', () => { lbIndex = (lbIndex + 1) % gItems.length; updateLightbox(); });
+        document.getElementById('lightbox').addEventListener('click', e => { if (e.target.id === 'lightbox') closeLightbox(); });
+        document.addEventListener('keydown', e => {
+            if (!document.getElementById('lightbox').classList.contains('open')) return;
+            if (e.key === 'Escape')      closeLightbox();
+            if (e.key === 'ArrowLeft')  { lbIndex = (lbIndex - 1 + gItems.length) % gItems.length; updateLightbox(); }
+            if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % gItems.length; updateLightbox(); }
+        });
+
+        // Scroll reveal
+        const ro = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.gcat-item, .gallery-cat, .vid-lib-item, .doc-card, .pdf-card').forEach(el => ro.observe(el));
+    </script>
+</body>
+</html>
