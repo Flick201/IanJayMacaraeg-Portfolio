@@ -1,0 +1,7 @@
+# Office temp/lock files
+~$*
+*.tmp
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
