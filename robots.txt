@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://flick201.github.io/IanJayMacaraeg-Portfolio/sitemap.xml
+Sitemap: https://macaraegianjay.dpdns.org/sitemap.xml
