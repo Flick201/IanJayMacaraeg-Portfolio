@@ -484,6 +484,7 @@
 .vid-lib-grid--portrait  .vid-lib-thumb { aspect-ratio: 9/16; }
 .vid-lib-grid--landscape .vid-lib-thumb { aspect-ratio: 16/9; }
 
+.vid-lib-thumb img,
 .vid-lib-thumb video {
     width: 100%;
     height: 100%;

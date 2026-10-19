@@ -1970,3 +1970,18 @@ em {
     .stack-icon-badge { width: 50px; height: 50px; border-radius: 12px; }
     .stack-icon-badge img { width: 26px; height: 26px; }
 }
+
+/* ===========================
+   YOUTUBE EMBEDS
+   =========================== */
+.drive-thumb-wrap.is-portrait  { aspect-ratio: 9 / 16; }
+.drive-thumb-wrap.is-landscape { aspect-ratio: 16 / 9; }
+
+/* Vertical (Shorts) videos in the popup */
+.video-modal-player.is-short iframe {
+    aspect-ratio: 9 / 16;
+    height: 72vh;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
