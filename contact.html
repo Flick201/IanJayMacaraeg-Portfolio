@@ -149,21 +149,28 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" placeholder="John Doe" maxlength="100" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" maxlength="150" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration…">
+                        <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration…" maxlength="150">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project…" required></textarea>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project…" maxlength="3000" required></textarea>
                     </div>
+                    <!-- Spam trap: hidden from people, bots tend to fill it in -->
+                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                        <label for="website">Leave this field empty</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <!-- Cloudflare Turnstile widget (shown only when a site key is set below) -->
+                    <div id="turnstileBox" style="margin-bottom:1rem;"></div>
                     <button type="submit" class="form-submit" id="submitBtn">
                         <span class="submit-text">Send Message</span>
                         <span class="submit-icon">→</span>
@@ -171,6 +178,9 @@
                     <p class="form-success" id="formSuccess">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
                         Message sent! I'll be in touch soon.
+                    </p>
+                    <p class="form-error" id="formWait">
+                        Please wait a minute before sending another message.
                     </p>
                     <p class="form-error" id="formError">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
@@ -227,6 +237,37 @@
         const submitText = submitBtn.querySelector('.submit-text');
         const successEl  = document.getElementById('formSuccess');
         const errorEl    = document.getElementById('formError');
+        const waitEl     = document.getElementById('formWait');
+
+        // ── Spam protection ───────────────────────────────────────────────────
+        // Optional: paste your Cloudflare Turnstile SITE key (public) to show the
+        // "I'm human" check. Leave empty to run with the honeypot + timing checks only.
+        const TURNSTILE_SITE_KEY = '';
+        const MIN_FILL_MS = 3000;          // humans take longer than this to fill the form
+        const COOLDOWN_MS = 60 * 1000;     // one message per minute per browser
+        const loadedAt = Date.now();
+        let turnstileToken = '';
+
+        if (TURNSTILE_SITE_KEY) {
+            window.onTurnstileLoad = function () {
+                turnstile.render('#turnstileBox', {
+                    sitekey: TURNSTILE_SITE_KEY,
+                    callback: function (t) { turnstileToken = t; },
+                    'expired-callback': function () { turnstileToken = ''; }
+                });
+            };
+            const ts = document.createElement('script');
+            ts.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad';
+            ts.async = true; ts.defer = true;
+            document.head.appendChild(ts);
+        }
+
+        function lastSentAt() {
+            try { return Number(localStorage.getItem('contactLastSent')) || 0; } catch (e) { return 0; }
+        }
+        function markSent() {
+            try { localStorage.setItem('contactLastSent', String(Date.now())); } catch (e) {}
+        }
 
         function setLoading(loading) {
             submitBtn.disabled = loading;
@@ -243,10 +284,28 @@
             e.preventDefault();
             successEl.classList.remove('show');
             errorEl.classList.remove('show');
+            waitEl.classList.remove('show');
+
+            // Bots: honeypot filled or form submitted too fast -> pretend it worked, send nothing
+            if (form.website.value || Date.now() - loadedAt < MIN_FILL_MS) {
+                form.reset();
+                showFeedback(successEl);
+                return;
+            }
+            if (Date.now() - lastSentAt() < COOLDOWN_MS) {
+                showFeedback(waitEl);
+                return;
+            }
+            if (TURNSTILE_SITE_KEY && !turnstileToken) {
+                showFeedback(errorEl, 6000);
+                return;
+            }
             setLoading(true);
 
             emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
                 .then(() => {
+                    markSent();
+                    if (TURNSTILE_SITE_KEY && window.turnstile) { turnstile.reset(); turnstileToken = ''; }
                     form.reset();
                     setLoading(false);
                     showFeedback(successEl);
