@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Jay Macaraeg — Web Developer, Video Editor &amp; Graphic Designer</title>
     <meta name="description" content="Portfolio of Ian Jay Macaraeg, an IT graduate and digital creative: websites, video editing, graphic design, photography and automation.">
     <meta name="author" content="Ian Jay Macaraeg">
-    <meta name="theme-color" content="#D35C4B">
+    <meta name="theme-color" content="#0d0c0b">
     <link rel="canonical" href="https://macaraegianjay.dpdns.org/">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <meta property="og:type" content="website">
@@ -18,477 +19,176 @@
     <meta name="twitter:title" content="Ian Jay Macaraeg — Web Developer, Video Editor &amp; Graphic Designer">
     <meta name="twitter:description" content="Portfolio of Ian Jay Macaraeg, an IT graduate and digital creative: websites, video editing, graphic design, photography and automation.">
     <meta name="twitter:image" content="https://macaraegianjay.dpdns.org/assets/og-image.jpg">
-    <title>Ian Jay Macaraeg — Web Developer, Video Editor &amp; Graphic Designer</title>
+    <script>
+(function(){var d=document.documentElement;d.classList.add('js');
+try{var t=localStorage.getItem('theme');d.dataset.theme=(t==='light'||t==='dark')?t:'dark';}catch(e){d.dataset.theme='dark';}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('reduced');
+try{if(sessionStorage.getItem('pt')==='1')d.classList.add('pt-in');
+else if(!sessionStorage.getItem('seen')&&!d.classList.contains('reduced'))d.classList.add('pre');
+sessionStorage.setItem('seen','1');}catch(e){}
+})();
+</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Person","name":"Ian Jay Macaraeg","url":"https://macaraegianjay.dpdns.org/","image":"https://macaraegianjay.dpdns.org/uploads/profile.png","jobTitle":"Web Developer, Video Editor and Graphic Designer","alumniOf":"Pangasinan State University","sameAs":["https://www.linkedin.com/in/ian-jay-macaraeg-761606292/","https://www.facebook.com/jayiannnn","https://www.instagram.com/_yanjeiii/"]}
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400&family=DM+Sans:opsz,wght@9..40,400;500;600&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ian Jay Macaraeg", "url": "https://macaraegianjay.dpdns.org/", "image": "https://macaraegianjay.dpdns.org/assets/img/profile-lg.webp", "jobTitle": "Web Developer, Video Editor and Graphic Designer", "alumniOf": "Pangasinan State University", "sameAs": ["https://www.linkedin.com/in/ian-jay-macaraeg-761606292/", "https://www.facebook.com/jayiannnn", "https://www.instagram.com/_yanjeiii/"]}</script>
 </head>
-<body>
+<body data-page="home">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="preloader" aria-hidden="true">
+    <div class="pre-top"><span>Portfolio &mdash; 2026</span><span>Loading</span></div>
+    <div class="pre-name" data-text="Ian Jay Macaraeg">Ian Jay Macaraeg</div>
+    <div class="pre-bottom"><span>Developer &middot; Editor &middot; Designer</span><span class="pre-count">000</span></div>
+    <div class="pre-bar"></div>
+</div>
+<div class="curtain" aria-hidden="true"><span class="curtain-word"></span></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
-    <!-- NAV -->
-    <nav class="navbar">
-        <div class="nav-inner">
-            <span class="nav-logo">My Portfolio</span>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-bg-word">CREATE</div>
-        <div class="hero-content">
-            <p class="hero-eyebrow">BS Information Technology &middot; Pangasinan State University</p>
-            <h1 class="hero-title">
-                Hi, I'm <em>Ian Jay</em><br>Macaraeg
-            </h1>
-            <p class="hero-sub">
-                I'm a passionate digital creative and IT graduate who loves turning ideas into polished, functional experiences &mdash; from clean code and cinematic edits to striking visuals and smart automations.
-            </p>
-            <div class="hero-cta">
-                <a href="projects.html" class="btn-primary">View Work</a>
-                <a href="contact.html" class="btn-ghost">Get in Touch</a>
-            </div>
-        </div>
-        <div class="hero-profile">
-            <div class="profile-ring">
-                <img src="uploads/profile.png" alt="Profile picture" class="profile-img">
-            </div>
-            <div class="profile-tag">
-                <span class="tag-dot"></span>
-                Available for projects
-            </div>
-        </div>
-        <div class="hero-scroll-hint">scroll &darr;</div>
-    </section>
-
-    <!-- BIO STRIP -->
-    <div class="bio-strip">
-        <p>&ldquo;A multi-skilled IT graduate with a love for creativity and technology &mdash; building websites, editing videos, designing graphics, and automating workflows to help people and businesses grow.&rdquo;</p>
+<header class="nav">
+    <a href="index.html" class="nav-logo" aria-label="Ian Jay Macaraeg — home"><span class="mark">IJ</span><span>Ian Jay</span></a>
+    <div class="nav-pill">
+        <nav class="nav-links" aria-label="Primary"><span class="nav-indicator"></span><a href="index.html" class="active">Home</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+        <button class="palette-btn" data-palette aria-label="Open command menu">Search <span class="kbd">Ctrl K</span></button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle light and dark theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+        <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
     </div>
-
-    <!-- SKILLS -->
-    <section class="skills-section">
-        <div class="section-header">
-            <span class="section-label">Expertise</span>
-            <h2>What I <em>do</em></h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card" style="--i:0">
-                <div class="skill-number">01</div>
-                <div class="skill-icon">&#x27E8;/&#x27E9;</div>
-                <h3>Web Development</h3>
-                <p>Building responsive, modern websites with HTML, CSS, and JavaScript that perform and impress.</p>
-            </div>
-            <div class="skill-card" style="--i:1">
-                <div class="skill-number">02</div>
-                <div class="skill-icon">&#9654;</div>
-                <h3>Video Editing</h3>
-                <p>Creating engaging video content for digital platforms with dynamic transitions and storytelling.</p>
-            </div>
-            <div class="skill-card" style="--i:2">
-                <div class="skill-number">03</div>
-                <div class="skill-icon">&#9672;</div>
-                <h3>Graphics Design</h3>
-                <p>Designing visually stunning graphics for branding and marketing that leave a lasting impression.</p>
-            </div>
-            <div class="skill-card" style="--i:3">
-                <div class="skill-number">04</div>
-                <div class="skill-icon">&#8599;</div>
-                <h3>Digital Marketing</h3>
-                <p>Driving growth through strategic digital campaigns that reach and convert the right audiences.</p>
-            </div>
-            <div class="skill-card" style="--i:4">
-                <div class="skill-number">05</div>
-                <div class="skill-icon">&#9889;</div>
-                <h3>GHL Automation</h3>
-                <p>Automating workflows with GoHighLevel to maximize business efficiency and reduce manual work.</p>
-            </div>
-            <div class="skill-card" style="--i:5">
-                <div class="skill-number">06</div>
-                <div class="skill-icon">&#9678;</div>
-                <h3>Data Management</h3>
-                <p>Organizing and analyzing data to surface the insights that drive informed decision-making.</p>
+</header>
+<div class="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile"><a class="big active" href="index.html"><span>Home</span></a><a class="big" href="projects.html"><span>Projects</span></a><a class="big" href="about.html"><span>About</span></a><a class="big" href="contact.html"><span>Contact</span></a></nav>
+    <div class="mm-foot"><a href="mailto:macaraegianjay2003@gmail.com">macaraegianjay2003@gmail.com</a><span>Philippines</span></div>
+</div>
+<main id="main">
+<section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="hero-word">CREATE</div></div>
+    <div class="container hero-grid">
+        <div class="hero-copy">
+            <p class="label hero-eyebrow" data-hero>BS Information Technology &middot; Pangasinan State University</p>
+            <h1 class="display hero-title"><span class="ln">Ian <em>Jay</em></span> <span class="ln">Macaraeg</span></h1>
+            <div class="hero-roles" data-hero aria-label="Roles"><span class="slash">/</span><span class="role-window"><span>Web Developer</span><span>Video Editor</span><span>Graphic Designer</span><span>Automation Builder</span></span></div>
+            <p class="hero-sub" data-hero>A passionate digital creative and IT graduate who loves turning ideas into polished, functional experiences &mdash; from clean code and cinematic edits to striking visuals and smart automations.</p>
+            <div class="hero-cta" data-hero>
+                <a class="btn btn--solid" href="projects.html" data-magnetic="0.3">View my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <a class="btn" href="contact.html" data-magnetic="0.3">Get in touch</a>
             </div>
         </div>
-    </section>
-
-    <!-- TECH STACKS -->
-    <section class="stacks-section">
-        <div class="section-header">
-            <br><br><br><br>
-            <span class="section-label">Toolbox</span>
-            <h2>Tools I <em>work with</em></h2>
-        </div>
-        <div class="stacks-content">
-            <div class="stack-category reveal" style="--i:0">
-                <span class="stack-cat-label">Video</span>
-                <div class="stack-cards">
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#9999FF"><img src="uploads/logos/premiere pro.png" alt="Premiere Pro" loading="lazy" decoding="async"></div><span class="stack-name">Premiere Pro</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge stack-icon-badge--white" style="--brand:#FFFFFF"><img src="uploads/logos/capcut.png" alt="CapCut" loading="lazy" decoding="async"></div><span class="stack-name">CapCut</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#0070C0"><img src="uploads/logos/powerdirector.png" alt="PowerDirector" loading="lazy" decoding="async"></div><span class="stack-name">PowerDirector</span></div>
-                </div>
-            </div>
-            <div class="stack-category reveal" style="--i:1">
-                <span class="stack-cat-label">Design</span>
-                <div class="stack-cards">
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#31A8FF"><img src="uploads/logos/photoshop.png" alt="Photoshop" loading="lazy" decoding="async"></div><span class="stack-name">Photoshop</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#00C4CC"><img src="uploads/logos/canva.png" alt="Canva" loading="lazy" decoding="async"></div><span class="stack-name">Canva</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#31A8FF"><img src="uploads/logos/lightroom.png" alt="Lightroom" loading="lazy" decoding="async"></div><span class="stack-name">Lightroom</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#F24E1E"><img src="https://cdn.simpleicons.org/figma/ffffff" alt="Figma" loading="lazy" decoding="async"></div><span class="stack-name">Figma</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#FF61F6"><img src="uploads/logos/xd.png" alt="Adobe XD" data-fallback="XD" loading="lazy" decoding="async"></div><span class="stack-name">Adobe XD</span></div>
-                </div>
-            </div>
-            <div class="stack-category reveal" style="--i:2">
-                <span class="stack-cat-label">Development</span>
-                <div class="stack-cards">
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#E34F26"><img src="https://cdn.simpleicons.org/html5/ffffff" alt="HTML5" loading="lazy" decoding="async"></div><span class="stack-name">HTML</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#1572B6"><img src="https://cdn.simpleicons.org/css3/ffffff" alt="CSS3" loading="lazy" decoding="async"></div><span class="stack-name">CSS</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#F7DF1E"><img src="https://cdn.simpleicons.org/javascript/000000" alt="JavaScript" loading="lazy" decoding="async"></div><span class="stack-name">JavaScript</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#7952B3"><img src="https://cdn.simpleicons.org/bootstrap/ffffff" alt="Bootstrap" loading="lazy" decoding="async"></div><span class="stack-name">Bootstrap</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#777BB4"><img src="https://cdn.simpleicons.org/php/ffffff" alt="PHP" loading="lazy" decoding="async"></div><span class="stack-name">PHP</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#4479A1"><img src="https://cdn.simpleicons.org/mysql/ffffff" alt="MySQL" loading="lazy" decoding="async"></div><span class="stack-name">MySQL</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#007ACC"><img src="https://cdn.simpleicons.org/visualstudiocode/ffffff" alt="VS Code" data-fallback="VS" loading="lazy" decoding="async"></div><span class="stack-name">VS Code</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#222222"><img src="https://cdn.simpleicons.org/unity/ffffff" alt="Unity" loading="lazy" decoding="async"></div><span class="stack-name">Unity</span></div>
-                </div>
-            </div>
-            <div class="stack-category reveal" style="--i:3">
-                <span class="stack-cat-label">Productivity</span>
-                <div class="stack-cards">
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#2B579A"><img src="https://cdn.simpleicons.org/microsoftword/ffffff" alt="Word" loading="lazy" decoding="async"></div><span class="stack-name">Word</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#217346"><img src="https://cdn.simpleicons.org/microsoftexcel/ffffff" alt="Excel" loading="lazy" decoding="async"></div><span class="stack-name">Excel</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#D24726"><img src="https://cdn.simpleicons.org/microsoftpowerpoint/ffffff" alt="PowerPoint" loading="lazy" decoding="async"></div><span class="stack-name">PowerPoint</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#34A853"><img src="https://cdn.simpleicons.org/googlesheets/ffffff" alt="Google Sheets" loading="lazy" decoding="async"></div><span class="stack-name">Google Sheets</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge stack-icon-letter" style="--brand:#4285F4"><span>GS</span></div><span class="stack-name">Google Sites</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#4285F4"><img src="https://cdn.simpleicons.org/googlelooker/ffffff" alt="Looker Studio" loading="lazy" decoding="async"></div><span class="stack-name">Looker Studio</span></div>
-                </div>
-            </div>
-            <div class="stack-category reveal" style="--i:4">
-                <span class="stack-cat-label">Platforms</span>
-                <div class="stack-cards">
-                    <div class="stack-card"><div class="stack-icon-badge stack-icon-letter" style="--brand:#F56E27"><span>GHL</span></div><span class="stack-name">GoHighLevel</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#222222"><img src="https://cdn.simpleicons.org/squarespace/ffffff" alt="Squarespace" loading="lazy" decoding="async"></div><span class="stack-name">Squarespace</span></div>
-                    <div class="stack-card"><div class="stack-icon-badge" style="--brand:#21759B"><img src="https://cdn.simpleicons.org/wordpress/ffffff" alt="WordPress" loading="lazy" decoding="async"></div><span class="stack-name">WordPress</span></div>
-                </div>
-            </div>
-        </div>
-        <br><br><br><br>
-    </section>
-
-    <!-- VIDEO SECTION -->
-    <section class="video-section">
-        <div class="section-header">
-            <span class="section-label">Reel</span>
-            <h2>Featured <em>Videos</em></h2>
-        </div>
-
-        <!-- PORTRAIT VIDEOS -->
-        <div class="carousel-sub-label">Portrait</div>
-        <div class="video-carousel-wrapper">
-            <button class="carousel-btn prev" id="portraitPrev" aria-label="Previous">&#10094;</button>
-            <div class="video-carousel">
-                <div class="video-track" id="videoTrack">
-                    <div class="video-card" data-yt="https://youtube.com/shorts/_1fWlj9ZymU">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-portrait"><img src="https://i.ytimg.com/vi/_1fWlj9ZymU/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/_1fWlj9ZymU/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">01</span><div><h5>How to Launch With Limited Budget</h5><p>AscendyX educational reel.</p></div></div>
-                    </div>
-                    <div class="video-card" data-yt="https://youtube.com/shorts/g9zzzXpjQX4">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-portrait"><img src="https://i.ytimg.com/vi/g9zzzXpjQX4/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/g9zzzXpjQX4/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">02</span><div><h5>Why Smart Businesses Automate</h5><p>AscendyX video content.</p></div></div>
-                    </div>
-                    <div class="video-card" data-yt="https://youtube.com/shorts/qCsE0OqDk0U">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-portrait"><img src="https://i.ytimg.com/vi/qCsE0OqDk0U/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/qCsE0OqDk0U/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">03</span><div><h5>Why Copying Big Brands Will Kill Your Marketing</h5><p>AscendyX video content.</p></div></div>
-                    </div>
-                    <div class="video-card" data-yt="https://youtube.com/shorts/KmHN6Gqsgkw">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-portrait"><img src="https://i.ytimg.com/vi/KmHN6Gqsgkw/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/KmHN6Gqsgkw/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">04</span><div><h5>Is Your Website Mobile-Friendly?</h5><p>AscendyX video content.</p></div></div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-btn next" id="portraitNext" aria-label="Next">&#10095;</button>
-        </div>
-        <div class="carousel-dots" id="portraitDots"></div>
-
-        <!-- LANDSCAPE VIDEOS -->
-        <div class="carousel-sub-label" style="margin-top:3rem;">Landscape</div>
-        <div class="video-carousel-wrapper">
-            <button class="carousel-btn prev" id="landscapePrev" aria-label="Previous">&#10094;</button>
-            <div class="video-carousel">
-                <div class="video-track" id="landscapeTrack">
-                    <div class="video-card" data-yt="https://youtu.be/MfHUdA7rWKk">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-landscape"><img src="https://i.ytimg.com/vi/MfHUdA7rWKk/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/MfHUdA7rWKk/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">01</span><div><h5>United Nations: Philippines</h5><p>Documentary-style edit.</p></div></div>
-                    </div>
-                    <div class="video-card" data-yt="https://youtu.be/xE4MkE71ZUw">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-landscape"><img src="https://i.ytimg.com/vi/xE4MkE71ZUw/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/xE4MkE71ZUw/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">02</span><div><h5>Climate Change &amp; Environmental Awareness</h5><p>Awareness campaign edit.</p></div></div>
-                    </div>
-                    <div class="video-card" data-yt="https://youtu.be/KcfUndFRi3k">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-landscape"><img src="https://i.ytimg.com/vi/KcfUndFRi3k/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/KcfUndFRi3k/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">03</span><div><h5>Eat O'Clock Video Ad</h5><p>Product advertisement edit.</p></div></div>
-                    </div>
-                    <div class="video-card" data-yt="https://youtu.be/52fpb0e0mWU">
-                        <div class="video-frame"><div class="drive-thumb-wrap is-landscape"><img src="https://i.ytimg.com/vi/52fpb0e0mWU/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/52fpb0e0mWU/hqdefault.jpg'"><div class="drive-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-                        <div class="video-caption"><span class="vid-num">04</span><div><h5>Patterns on Our World</h5><p>Educational documentary edit.</p></div></div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-btn next" id="landscapeNext" aria-label="Next">&#10095;</button>
-        </div>
-        <div class="carousel-dots" id="landscapeDots"></div>
-
-    </section>
-
-    <!-- IMAGE GALLERY SECTION -->
-    <section class="gallery-section">
-        <div class="section-header">
-            <span class="section-label">Gallery</span>
-            <h2>Visual <em>Work</em></h2>
-        </div>
-
-        <!-- PORTRAIT IMAGES -->
-        <div class="gallery-sub-label">Portrait</div>
-        <div class="img-carousel-outer">
-            <button class="carousel-btn dark prev" id="imgPortraitPrev" aria-label="Previous">&#10094;</button>
-            <div class="img-carousel-viewport">
-                <div class="img-carousel-track" id="imgPortraitTrack">
-                    <div class="img-card img-card--portrait"><img src="uploads/images/portrait5.jpg" alt="Portrait 1" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 01</span></div></div>
-                    <div class="img-card img-card--portrait"><img src="uploads/images/portrait6.jpg" alt="Portrait 2" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 02</span></div></div>
-                    <div class="img-card img-card--portrait"><img src="uploads/images/portrait7.jpg" alt="Portrait 3" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 03</span></div></div>
-                    <div class="img-card img-card--portrait"><img src="uploads/images/portrait8.jpg" alt="Portrait 4" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 04</span></div></div>
-                    <div class="img-card img-card--portrait"><img src="uploads/images/portrait9.jpg" alt="Portrait 5" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 05</span></div></div>
-                </div>
-            </div>
-            <button class="carousel-btn dark next" id="imgPortraitNext" aria-label="Next">&#10095;</button>
-        </div>
-        <div class="carousel-dots img-dots" id="imgPortraitDots"></div>
-
-        <!-- LANDSCAPE IMAGES -->
-        <div class="gallery-sub-label" style="margin-top:2.5rem;">Landscape</div>
-        <div class="img-carousel-outer">
-            <button class="carousel-btn dark prev" id="imgLandPrev" aria-label="Previous">&#10094;</button>
-            <div class="img-carousel-viewport">
-                <div class="img-carousel-track" id="imgLandTrack">
-                    <div class="img-card img-card--landscape"><img src="uploads/images/landscape/LIGHTROOM EDIT 1.jpg" alt="Landscape 1" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 01</span></div></div>
-                    <div class="img-card img-card--landscape"><img src="uploads/images/landscape/LANDSCAPE POSTER CENTERED REVISED 2.jpg" alt="Landscape 2" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 02</span></div></div>
-                    <div class="img-card img-card--landscape"><img src="uploads/images/landscape/MACARAEG IAN JAY P(BSIT 1-1).jpg" alt="Landscape 3" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 03</span></div></div>
-                    <div class="img-card img-card--landscape"><img src="uploads/images/landscape/LOADING SCREEN.jpg" alt="Landscape 4" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 04</span></div></div>
-                    <div class="img-card img-card--landscape"><img src="uploads/images/landscape/LIGHTROOM EDIT 2.jpg" alt="Landscape 5" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 05</span></div></div>
-                </div>
-            </div>
-            <button class="carousel-btn dark next" id="imgLandNext" aria-label="Next">&#10095;</button>
-        </div>
-        <div class="carousel-dots img-dots" id="imgLandDots"></div>
-
-        <!-- SQUARE IMAGES -->
-        <div class="gallery-sub-label" style="margin-top:2.5rem;">Square</div>
-        <div class="img-carousel-outer">
-            <button class="carousel-btn dark prev" id="imgSqPrev" aria-label="Previous">&#10094;</button>
-            <div class="img-carousel-viewport">
-                <div class="img-carousel-track" id="imgSqTrack">
-                    <div class="img-card img-card--square"><img src="uploads/images/squares/3.png" alt="Square 1" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 01</span></div></div>
-                    <div class="img-card img-card--square"><img src="uploads/images/squares/4.png" alt="Square 2" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 02</span></div></div>
-                    <div class="img-card img-card--square"><img src="uploads/images/squares/5.png" alt="Square 3" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 03</span></div></div>
-                    <div class="img-card img-card--square"><img src="uploads/images/squares/6.png" alt="Square 4" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 04</span></div></div>
-                    <div class="img-card img-card--square"><img src="uploads/images/squares/8.png" alt="Square 5" loading="lazy" decoding="async"><div class="img-overlay"><span>Photo 05</span></div></div>
-                </div>
-            </div>
-            <button class="carousel-btn dark next" id="imgSqNext" aria-label="Next">&#10095;</button>
-        </div>
-        <div class="carousel-dots img-dots" id="imgSqDots"></div>
-
-    </section>
-
-    <!-- CTA BANNER -->
-    <section class="cta-banner">
-        <div class="cta-inner">
-            <h2>Let's create something <em>amazing</em> together.</h2>
-            <a href="contact.html" class="btn-primary light">Start a Project</a>
-        </div>
-    </section>
-
-    <!-- VIDEO MODAL (landscape Drive-hosted videos) -->
-    <div class="video-modal" id="videoModal">
-        <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
-        <div class="video-modal-inner">
-            <button class="video-modal-close" id="videoModalClose">&#10005;</button>
-            <div class="video-modal-player" id="videoModalPlayer"></div>
-            <div class="video-modal-info">
-                <h4 id="modalVideoTitle"></h4>
-                <p id="modalVideoDesc"></p>
-            </div>
+        <div class="hero-portrait">
+            <div class="portrait-frame"><img src="assets/img/profile-md.webp" alt="Portrait of Ian Jay Macaraeg" width="750" height="750" fetchpriority="high"></div>
+            <div class="portrait-ring" aria-hidden="true"></div>
+            <span class="chip-float c1"><span class="pulse-dot"></span>Available for projects</span>
+            <span class="chip-float c2">Philippines &middot; Worldwide</span>
+            <span class="chip-float c3">Video &middot; Web &middot; Design</span>
+            <div class="spin-badge" aria-hidden="true"><svg viewBox="0 0 140 140"><defs><path id="circ" d="M70,70 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/></defs><text><textPath href="#circ">Let&rsquo;s create &middot; Let&rsquo;s collaborate &middot; </textPath></text></svg><div class="core"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></i></div></div>
         </div>
     </div>
+    <a class="scroll-hint" href="#intro" aria-label="Scroll to content"><span class="bar"></span>Scroll</a>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <span class="footer-logo">Portfolio</span>
-            <nav class="footer-nav">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <p class="footer-copy">&copy; 2024 My Portfolio. All rights reserved.</p>
+<div class="marquee" data-speed="1" data-follow aria-label="Skills"><div class="marquee-track"><div class="marquee-item-group" style="display:flex"><span class="marquee-item">Web Development<i></i></span><span class="marquee-item"><span class=o>Video Editing</span><i></i></span><span class="marquee-item">Graphic Design<i></i></span><span class="marquee-item"><span class=o>Digital Marketing</span><i></i></span><span class="marquee-item">GHL Automation<i></i></span><span class="marquee-item"><span class=o>Data Management</span><i></i></span></div></div></div>
+
+<section class="section statement" id="intro">
+    <div class="statement-line" aria-hidden="true"><svg viewBox="0 0 900 700" fill="none"><path d="M880 10 C 620 40, 760 260, 520 300 S 160 260, 200 440 S 520 560, 40 690"/></svg></div>
+    <div class="container">
+        <div class="section-head"><span class="label" data-reveal>About me</span></div>
+        <p class="statement-text">A multi-skilled <em class="hl">IT graduate</em> with a love for creativity and technology &mdash; building websites, editing videos, designing graphics, and automating workflows to help people and businesses <em class="hl">grow</em>.</p>
+        <div class="stats">
+            <div class="stat" data-reveal><div class="stat-num" data-count="26" data-suffix="+">26</div><p class="stat-label">Video edits published</p></div>
+            <div class="stat" data-reveal><div class="stat-num" data-count="33" data-suffix="+">33</div><p class="stat-label">Design works &amp; photos</p></div>
+            <div class="stat" data-reveal><div class="stat-num" data-count="6">6</div><p class="stat-label">Creative &amp; technical disciplines</p></div>
+            <div class="stat" data-reveal><div class="stat-num" data-count="24" data-suffix="h">24</div><p class="stat-label">Typical reply time</p></div>
         </div>
-    </footer>
+        <div style="margin-top:3rem" data-reveal><a class="btn" href="about.html" data-magnetic="0.3">More about me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+</section>
 
-    <script>
-        // ── Generic transform-based carousel factory ──────────────────────
-        function makeCarousel({ trackId, dotsId, prevId, nextId, getVisible }) {
-            const track = document.getElementById(trackId);
-            const dotsEl = document.getElementById(dotsId);
-            if (!track) return;
-            let cur = 0;
-            const total = track.children.length;
+<section class="hscroll" id="services" aria-labelledby="svc-title">
+    <div class="hscroll-sticky">
+        <div class="container hscroll-head">
+            <div class="section-head" style="margin:0"><span class="label">What I do</span><h2 id="svc-title" class="display section-title" data-split>Skills that <em>move</em> the needle</h2></div>
+            <span class="hscroll-count"><b>01</b> / 06</span>
+        </div>
+        <div class="hscroll-track"><article class="svc" data-tilt="3"><div class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><span class="svc-num" aria-hidden="true">01</span></div><div><h3>Web Development</h3><p>Building responsive, modern websites with HTML, CSS, and JavaScript that perform and impress.</p></div></article><article class="svc" data-tilt="3"><div class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></svg></span><span class="svc-num" aria-hidden="true">02</span></div><div><h3>Video Editing</h3><p>Creating engaging video content for digital platforms with dynamic transitions and storytelling.</p></div></article><article class="svc" data-tilt="3"><div class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.2L20 9l-4 4 1 5.7-5-2.8-5 2.8L8 13 4 9l5.6-.8z"/></svg></span><span class="svc-num" aria-hidden="true">03</span></div><div><h3>Graphics Design</h3><p>Designing visually stunning graphics for branding and marketing that leave a lasting impression.</p></div></article><article class="svc" data-tilt="3"><div class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span><span class="svc-num" aria-hidden="true">04</span></div><div><h3>Digital Marketing</h3><p>Driving growth through strategic digital campaigns that reach and convert the right audiences.</p></div></article><article class="svc" data-tilt="3"><div class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><span class="svc-num" aria-hidden="true">05</span></div><div><h3>GHL Automation</h3><p>Automating workflows with GoHighLevel to maximize business efficiency and reduce manual work.</p></div></article><article class="svc" data-tilt="3"><div class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><span class="svc-num" aria-hidden="true">06</span></div><div><h3>Data Management</h3><p>Organizing and analyzing data to surface the insights that drive informed decision-making.</p></div></article></div>
+        <div class="hscroll-progress" aria-hidden="true"><i></i></div>
+    </div>
+</section>
 
-            function buildDots() {
-                dotsEl.innerHTML = '';
-                const vis = getVisible();
-                const count = Math.max(1, total - vis + 1);
-                for (let i = 0; i < count; i++) {
-                    const d = document.createElement('button');
-                    d.className = 'dot' + (i === cur ? ' active' : '');
-                    d.addEventListener('click', () => goTo(i));
-                    dotsEl.appendChild(d);
-                }
-            }
+<section class="section" id="tools" aria-labelledby="tools-title">
+    <div class="container"><div class="section-head"><span class="label" data-reveal>Toolbox</span><h2 id="tools-title" class="display section-title" data-split>Tools I <em>work with</em></h2></div></div>
+    <div class="tools-rows">
+        <div class="marquee marquee--tools" data-speed="0.8" data-follow aria-label="Tools"><div class="marquee-track"><div style="display:flex"><span class="tool-chip" style="--brand:#9999FF"><span class="tool-badge tool-badge--img" style="--brand:#9999FF"><img onerror="this.parentNode.innerHTML='<b>PP</b>'" src="uploads/logos/premiere pro.png" alt="" loading="lazy" decoding="async" width="42" height="42"></span>Premiere Pro</span><span class="tool-chip" style="--brand:#fff"><span class="tool-badge tool-badge--img" style="--brand:#ffffff"><img onerror="this.parentNode.innerHTML='<b>CA</b>'" src="uploads/logos/capcut.png" alt="" loading="lazy" decoding="async" width="42" height="42"></span>CapCut</span><span class="tool-chip" style="--brand:#0070C0"><span class="tool-badge tool-badge--img" style="--brand:#0070C0"><img onerror="this.parentNode.innerHTML='<b>PO</b>'" src="uploads/logos/powerdirector.png" alt="" loading="lazy" decoding="async" width="42" height="42"></span>PowerDirector</span><span class="tool-chip" style="--brand:#31A8FF"><span class="tool-badge tool-badge--img" style="--brand:#31A8FF"><img onerror="this.parentNode.innerHTML='<b>PH</b>'" src="uploads/logos/photoshop.png" alt="" loading="lazy" decoding="async" width="42" height="42"></span>Photoshop</span><span class="tool-chip" style="--brand:#00C4CC"><span class="tool-badge tool-badge--img" style="--brand:#00C4CC"><img onerror="this.parentNode.innerHTML='<b>CA</b>'" src="uploads/logos/canva.png" alt="" loading="lazy" decoding="async" width="42" height="42"></span>Canva</span><span class="tool-chip" style="--brand:#31A8FF"><span class="tool-badge tool-badge--img" style="--brand:#31A8FF"><img onerror="this.parentNode.innerHTML='<b>LI</b>'" src="uploads/logos/lightroom.png" alt="" loading="lazy" decoding="async" width="42" height="42"></span>Lightroom</span><span class="tool-chip" style="--brand:#F24E1E"><span class="tool-badge" style="--brand:#F24E1E"><img onerror="this.parentNode.innerHTML='<b>FI</b>'" src="https://cdn.simpleicons.org/figma/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Figma</span><span class="tool-chip" style="--brand:#FF61F6"><span class="tool-badge tool-badge--img" style="--brand:#FF61F6"><img onerror="this.parentNode.innerHTML='<b>XD</b>'" src="uploads/logos/xd.png" alt="" loading="lazy" decoding="async" width="42" height="42"></span>Adobe XD</span><span class="tool-chip" style="--brand:#E34F26"><span class="tool-badge" style="--brand:#E34F26"><img onerror="this.parentNode.innerHTML='<b>HT</b>'" src="https://cdn.simpleicons.org/html5/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>HTML</span><span class="tool-chip" style="--brand:#1572B6"><span class="tool-badge" style="--brand:#1572B6"><img onerror="this.parentNode.innerHTML='<b>CS</b>'" src="https://cdn.simpleicons.org/css3/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>CSS</span><span class="tool-chip" style="--brand:#F7DF1E"><span class="tool-badge" style="--brand:#F7DF1E"><img onerror="this.parentNode.innerHTML='<b>JA</b>'" src="https://cdn.simpleicons.org/javascript/000000" alt="" loading="lazy" decoding="async" width="24" height="24"></span>JavaScript</span><span class="tool-chip" style="--brand:#7952B3"><span class="tool-badge" style="--brand:#7952B3"><img onerror="this.parentNode.innerHTML='<b>BO</b>'" src="https://cdn.simpleicons.org/bootstrap/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Bootstrap</span><span class="tool-chip" style="--brand:#777BB4"><span class="tool-badge" style="--brand:#777BB4"><img onerror="this.parentNode.innerHTML='<b>PH</b>'" src="https://cdn.simpleicons.org/php/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>PHP</span></div></div></div>
+        <div class="marquee marquee--tools" data-speed="0.8" data-dir="right" data-follow aria-hidden="true"><div class="marquee-track"><div style="display:flex"><span class="tool-chip" style="--brand:#4479A1"><span class="tool-badge" style="--brand:#4479A1"><img onerror="this.parentNode.innerHTML='<b>MY</b>'" src="https://cdn.simpleicons.org/mysql/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>MySQL</span><span class="tool-chip" style="--brand:#007ACC"><span class="tool-badge" style="--brand:#007ACC"><img onerror="this.parentNode.innerHTML='<b>VS</b>'" src="https://cdn.simpleicons.org/visualstudiocode/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>VS Code</span><span class="tool-chip" style="--brand:#222222"><span class="tool-badge" style="--brand:#222222"><img onerror="this.parentNode.innerHTML='<b>UN</b>'" src="https://cdn.simpleicons.org/unity/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Unity</span><span class="tool-chip" style="--brand:#2B579A"><span class="tool-badge" style="--brand:#2B579A"><img onerror="this.parentNode.innerHTML='<b>WO</b>'" src="https://cdn.simpleicons.org/microsoftword/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Word</span><span class="tool-chip" style="--brand:#217346"><span class="tool-badge" style="--brand:#217346"><img onerror="this.parentNode.innerHTML='<b>EX</b>'" src="https://cdn.simpleicons.org/microsoftexcel/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Excel</span><span class="tool-chip" style="--brand:#D24726"><span class="tool-badge" style="--brand:#D24726"><img onerror="this.parentNode.innerHTML='<b>PO</b>'" src="https://cdn.simpleicons.org/microsoftpowerpoint/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>PowerPoint</span><span class="tool-chip" style="--brand:#34A853"><span class="tool-badge" style="--brand:#34A853"><img onerror="this.parentNode.innerHTML='<b>GS</b>'" src="https://cdn.simpleicons.org/googlesheets/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Google Sheets</span><span class="tool-chip" style="--brand:#4285F4"><span class="tool-badge" style="--brand:#4285F4"><b>GS</b></span>Google Sites</span><span class="tool-chip" style="--brand:#4285F4"><span class="tool-badge" style="--brand:#4285F4"><img onerror="this.parentNode.innerHTML='<b>LS</b>'" src="https://cdn.simpleicons.org/googlelooker/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Looker Studio</span><span class="tool-chip" style="--brand:#F56E27"><span class="tool-badge" style="--brand:#F56E27"><b>GHL</b></span>GoHighLevel</span><span class="tool-chip" style="--brand:#222222"><span class="tool-badge" style="--brand:#222222"><img onerror="this.parentNode.innerHTML='<b>SQ</b>'" src="https://cdn.simpleicons.org/squarespace/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>Squarespace</span><span class="tool-chip" style="--brand:#21759B"><span class="tool-badge" style="--brand:#21759B"><img onerror="this.parentNode.innerHTML='<b>WO</b>'" src="https://cdn.simpleicons.org/wordpress/ffffff" alt="" loading="lazy" decoding="async" width="24" height="24"></span>WordPress</span></div></div></div>
+    </div>
+</section>
 
-            function goTo(n) {
-                const vis = getVisible();
-                const max = Math.max(0, total - vis);
-                cur = Math.max(0, Math.min(n, max));
-                track.style.transform = `translateX(-${(100 / vis) * cur}%)`;
-                buildDots();
-            }
+<section class="section" id="videos" style="padding-bottom:3rem" aria-labelledby="vid-title">
+    <div class="container"><div class="section-head"><span class="label" data-reveal>Reel</span><h2 id="vid-title" class="display section-title" data-split>Featured <em>videos</em></h2></div></div>
+    <div class="rail-sub">Portrait &middot; Reels</div>
+    <div class="rail-wrap" data-cursor-zone>
+        <div class="rail" tabindex="-1" data-cursor="Drag" aria-label="Portrait videos"><article class="vcard" data-yt="https://youtube.com/shorts/_1fWlj9ZymU" data-title="How to Launch With Limited Budget" data-desc="AscendyX educational reel." tabindex="0" role="button" aria-label="Play video: How to Launch With Limited Budget" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/_1fWlj9ZymU/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/_1fWlj9ZymU/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">01</span><div><h3>How to Launch With Limited Budget</h3><p>AscendyX educational reel.</p></div></div></article><article class="vcard" data-yt="https://youtube.com/shorts/g9zzzXpjQX4" data-title="Why Smart Businesses Automate" data-desc="AscendyX video content." tabindex="0" role="button" aria-label="Play video: Why Smart Businesses Automate" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/g9zzzXpjQX4/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/g9zzzXpjQX4/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">02</span><div><h3>Why Smart Businesses Automate</h3><p>AscendyX video content.</p></div></div></article><article class="vcard" data-yt="https://youtube.com/shorts/qCsE0OqDk0U" data-title="Why Copying Big Brands Will Kill Your Marketing" data-desc="AscendyX video content." tabindex="0" role="button" aria-label="Play video: Why Copying Big Brands Will Kill Your Marketing" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/qCsE0OqDk0U/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/qCsE0OqDk0U/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">03</span><div><h3>Why Copying Big Brands Will Kill Your Marketing</h3><p>AscendyX video content.</p></div></div></article><article class="vcard" data-yt="https://youtube.com/shorts/KmHN6Gqsgkw" data-title="Is Your Website Mobile-Friendly?" data-desc="AscendyX video content." tabindex="0" role="button" aria-label="Play video: Is Your Website Mobile-Friendly?" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/KmHN6Gqsgkw/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/KmHN6Gqsgkw/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">04</span><div><h3>Is Your Website Mobile-Friendly?</h3><p>AscendyX video content.</p></div></div></article><article class="vcard" data-yt="https://youtube.com/shorts/iI2Cw093OE4" data-title="Humorous Edit 1" data-desc="AscendyX creative edit." tabindex="0" role="button" aria-label="Play video: Humorous Edit 1" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/iI2Cw093OE4/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/iI2Cw093OE4/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">05</span><div><h3>Humorous Edit 1</h3><p>AscendyX creative edit.</p></div></div></article><article class="vcard" data-yt="https://youtube.com/shorts/sTDp1-DF2nQ" data-title="How to Identify Your Ideal Customer" data-desc="AscendyX video content." tabindex="0" role="button" aria-label="Play video: How to Identify Your Ideal Customer" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/sTDp1-DF2nQ/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/sTDp1-DF2nQ/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">06</span><div><h3>How to Identify Your Ideal Customer</h3><p>AscendyX video content.</p></div></div></article><article class="vcard" data-yt="https://youtube.com/shorts/ZDreJcNNh48" data-title="Branding: The Secret to Standing Out" data-desc="AscendyX video content." tabindex="0" role="button" aria-label="Play video: Branding: The Secret to Standing Out" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/ZDreJcNNh48/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/ZDreJcNNh48/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">07</span><div><h3>Branding: The Secret to Standing Out</h3><p>AscendyX video content.</p></div></div></article><article class="vcard" data-yt="https://youtube.com/shorts/CjQAw2PhC3k" data-title="ParaGuard" data-desc="Original project video." tabindex="0" role="button" aria-label="Play video: ParaGuard" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/CjQAw2PhC3k/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/CjQAw2PhC3k/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">08</span><div><h3>ParaGuard</h3><p>Original project video.</p></div></div></article></div>
+        <div class="rail-ui"><div class="rail-bar" aria-hidden="true"><i></i></div><div class="rail-btns"><button class="rail-prev" aria-label="Scroll left">&larr;</button><button class="rail-next" aria-label="Scroll right">&rarr;</button></div></div>
+    </div>
+    <div class="rail-sub" style="margin-top:2rem">Landscape &middot; Edits</div>
+    <div class="rail-wrap">
+        <div class="rail" tabindex="-1" data-cursor="Drag" aria-label="Landscape videos"><article class="vcard land" data-yt="https://youtu.be/MfHUdA7rWKk" data-title="United Nations: Philippines" data-desc="Documentary-style edit." tabindex="0" role="button" aria-label="Play video: United Nations: Philippines" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/MfHUdA7rWKk/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/MfHUdA7rWKk/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">01</span><div><h3>United Nations: Philippines</h3><p>Documentary-style edit.</p></div></div></article><article class="vcard land" data-yt="https://youtu.be/xE4MkE71ZUw" data-title="Climate Change &amp; Environmental Awareness" data-desc="Awareness campaign edit." tabindex="0" role="button" aria-label="Play video: Climate Change &amp; Environmental Awareness" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/xE4MkE71ZUw/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/xE4MkE71ZUw/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">02</span><div><h3>Climate Change &amp; Environmental Awareness</h3><p>Awareness campaign edit.</p></div></div></article><article class="vcard land" data-yt="https://youtu.be/KcfUndFRi3k" data-title="Eat O&#x27;Clock Video Ad" data-desc="Product advertisement edit." tabindex="0" role="button" aria-label="Play video: Eat O&#x27;Clock Video Ad" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/KcfUndFRi3k/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/KcfUndFRi3k/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">03</span><div><h3>Eat O&#x27;Clock Video Ad</h3><p>Product advertisement edit.</p></div></div></article><article class="vcard land" data-yt="https://youtu.be/52fpb0e0mWU" data-title="Patterns on Our World" data-desc="Educational documentary edit." tabindex="0" role="button" aria-label="Play video: Patterns on Our World" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/52fpb0e0mWU/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/52fpb0e0mWU/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">04</span><div><h3>Patterns on Our World</h3><p>Educational documentary edit.</p></div></div></article><article class="vcard land" data-yt="https://youtu.be/BPtYmHKKycM" data-title="Mental Health Awareness" data-desc="Awareness campaign edit." tabindex="0" role="button" aria-label="Play video: Mental Health Awareness" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/BPtYmHKKycM/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/BPtYmHKKycM/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">05</span><div><h3>Mental Health Awareness</h3><p>Awareness campaign edit.</p></div></div></article><article class="vcard land" data-yt="https://youtu.be/m5452AWc6X8" data-title="Discussion Report: Heapsort" data-desc="Academic presentation edit." tabindex="0" role="button" aria-label="Play video: Discussion Report: Heapsort" data-cursor="Play"><div class="vthumb"><img src="https://i.ytimg.com/vi/m5452AWc6X8/maxresdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/m5452AWc6X8/hqdefault.jpg'" draggable="false"><span class="vplay"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></i></span></div><div class="vmeta"><span class="n">06</span><div><h3>Discussion Report: Heapsort</h3><p>Academic presentation edit.</p></div></div></article></div>
+        <div class="rail-ui"><div class="rail-bar" aria-hidden="true"><i></i></div><div class="rail-btns"><button class="rail-prev" aria-label="Scroll left">&larr;</button><button class="rail-next" aria-label="Scroll right">&rarr;</button></div></div>
+    </div>
+    <div class="container" style="margin-top:2.5rem" data-reveal><a class="btn" href="projects.html#videos" data-magnetic="0.3">See all 26 videos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</section>
 
-            document.getElementById(prevId).addEventListener('click', () => goTo(cur - 1));
-            document.getElementById(nextId).addEventListener('click', () => goTo(cur + 1));
-            window.addEventListener('resize', () => goTo(0));
-            buildDots();
-        }
+<section class="section" id="work" aria-labelledby="work-title">
+    <div class="container">
+        <div class="section-head"><span class="label" data-reveal>Visual work</span><h2 id="work-title" class="display section-title" data-split>Pixels, <em>perfected</em></h2></div>
+        <div class="work-grid"><a class="work-item w1" href="projects.html#photography" data-cursor="View" data-reveal><img src="assets/img/portrait5-md.webp" alt="Portrait photography" loading="lazy" decoding="async" width="675" height="900"><span class="cap"><span>Photography</span><span>View &rarr;</span></span></a><a class="work-item w2" href="projects.html#photography" data-cursor="View" data-reveal><img src="assets/img/lightroom-edit-1-md.webp" alt="Lightroom landscape edit" loading="lazy" decoding="async" width="900" height="675"><span class="cap"><span>Photography</span><span>View &rarr;</span></span></a><a class="work-item w3" href="projects.html#logos" data-cursor="View" data-reveal><img src="assets/img/4-md.webp" alt="Brand mark design" loading="lazy" decoding="async" width="500" height="500"><span class="cap"><span>Logo design</span><span>View &rarr;</span></span></a><a class="work-item w4" href="projects.html#2d-art" data-cursor="View" data-reveal><img src="assets/img/character2-md.webp" alt="2D character illustration" loading="lazy" decoding="async" width="657" height="900"><span class="cap"><span>2D art</span><span>View &rarr;</span></span></a><a class="work-item w5" href="projects.html#logos" data-cursor="View" data-reveal><img src="assets/img/6-md.webp" alt="Logo identity design" loading="lazy" decoding="async" width="500" height="500"><span class="cap"><span>Logo design</span><span>View &rarr;</span></span></a></div>
+        <div style="margin-top:3rem" data-reveal><a class="btn" href="projects.html" data-magnetic="0.3">Browse every project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+</section>
 
-        // ── Portrait video carousel (3 / 2 / 1 visible) ──────────────────
-        makeCarousel({ trackId: 'videoTrack', dotsId: 'portraitDots', prevId: 'portraitPrev', nextId: 'portraitNext',
-            getVisible: () => window.innerWidth >= 992 ? 3 : window.innerWidth >= 768 ? 2 : 1 });
-
-        // ── Landscape video carousel (2 / 1 visible) ──────────────────────
-        makeCarousel({ trackId: 'landscapeTrack', dotsId: 'landscapeDots', prevId: 'landscapePrev', nextId: 'landscapeNext',
-            getVisible: () => window.innerWidth >= 768 ? 2 : 1 });
-
-        // ── Image carousels (transform-based, 1 card per step) ───────────────
-        makeCarousel({ trackId: 'imgPortraitTrack', dotsId: 'imgPortraitDots', prevId: 'imgPortraitPrev', nextId: 'imgPortraitNext',
-            getVisible: () => window.innerWidth >= 992 ? 3 : window.innerWidth >= 768 ? 2 : 1 });
-        makeCarousel({ trackId: 'imgLandTrack', dotsId: 'imgLandDots', prevId: 'imgLandPrev', nextId: 'imgLandNext',
-            getVisible: () => window.innerWidth >= 768 ? 3 : 2 });
-        makeCarousel({ trackId: 'imgSqTrack', dotsId: 'imgSqDots', prevId: 'imgSqPrev', nextId: 'imgSqNext',
-            getVisible: () => window.innerWidth >= 992 ? 4 : window.innerWidth >= 768 ? 3 : 2 });
-
-        // ── Scroll reveal ─────────────────────────────────────────────────
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.skill-card, .video-card, .bio-strip, .cta-banner, .stack-category')
-            .forEach(el => observer.observe(el));
-
-        // ── Stack logo fallback ───────────────────────────────────────────
-        document.querySelectorAll('.stack-icon-badge img').forEach(img => {
-            img.onerror = function () {
-                const badge = this.parentElement;
-                badge.classList.add('stack-icon-letter');
-                if (this.dataset.fallback) {
-                    badge.innerHTML = this.dataset.fallback;
-                } else {
-                    const words = this.alt.trim().split(' ');
-                    badge.innerHTML = words.length >= 2
-                        ? words[0][0] + words[1][0]
-                        : this.alt.substring(0, 2).toUpperCase();
-                }
-            };
-        });
-
-        // ── Mobile nav ────────────────────────────────────────────────────
-        document.querySelector('.nav-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('open');
-        });
-
-        // ── Video modal (YouTube, Drive and local files) ─────────────────────
-        function driveFileId(url) {
-            var m = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
-            return m ? m[1] : null;
-        }
-        function isDriveLink(src) {
-            return typeof src === 'string' && src.includes('drive.google.com');
-        }
-
-        var vidModal  = document.getElementById('videoModal');
-        var vidPlayer = document.getElementById('videoModalPlayer');
-        var vidTitle  = document.getElementById('modalVideoTitle');
-        var vidDesc   = document.getElementById('modalVideoDesc');
-
-        function vidPlayerEl() { return vidPlayer; }
-        function youtubeInfo(src) {
-            var m = typeof src === 'string' && src.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|embed\/|watch\?v=))([\w-]+)/);
-            return m ? { id: m[1], short: src.indexOf('/shorts/') !== -1 } : null;
-        }
-        function youtubeEmbed(info) {
-            vidPlayerEl().classList.toggle('is-short', info.short);
-            return '<iframe src="https://www.youtube-nocookie.com/embed/' + info.id + '?autoplay=1&rel=0&playsinline=1" title="Video player" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture" frameborder="0"></iframe>';
-        }
-
-        function openVideoModal(src, title, desc) {
-            var yt = youtubeInfo(src);
-            if (yt) {
-                vidPlayer.innerHTML = youtubeEmbed(yt);
-            } else if (isDriveLink(src)) {
-                var id = driveFileId(src);
-                var previewUrl = 'https://drive.google.com/file/d/' + id + '/preview';
-                vidPlayer.innerHTML = '<iframe src="' + previewUrl + '" allowfullscreen allow="autoplay; encrypted-media" frameborder="0"></iframe>';
-            } else {
-                vidPlayer.innerHTML = '<video controls playsinline autoplay><source src="' + src + '" type="video/mp4"></video>';
-            }
-            vidTitle.textContent = title || '';
-            vidDesc.textContent  = desc  || '';
-            vidModal.classList.add('open');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeVideoModal() {
-            vidPlayer.innerHTML = '';
-            vidPlayer.classList.remove('is-short');
-            vidModal.classList.remove('open');
-            document.body.style.overflow = '';
-        }
-
-        document.getElementById('videoModalClose').addEventListener('click', closeVideoModal);
-        document.getElementById('videoModalBackdrop').addEventListener('click', closeVideoModal);
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && vidModal && vidModal.classList.contains('open')) closeVideoModal();
-        });
-
-        // YouTube cards (portrait + landscape): thumbnail opens the popup player
-        document.querySelectorAll('.video-card[data-yt]').forEach(function(card) {
-            var cap     = card.querySelector('.video-caption');
-            var titleEl = cap ? cap.querySelector('h5') : null;
-            var descEl  = cap ? cap.querySelector('p')  : null;
-            card.style.cursor = 'pointer';
-            card.addEventListener('click', function() {
-                openVideoModal(card.dataset.yt, titleEl ? titleEl.textContent : '', descEl ? descEl.textContent : '');
-            });
-        });
-    </script>
+<section class="cta" aria-labelledby="cta-title">
+    <div class="hero-bg" aria-hidden="true"><div class="blob b1"></div></div>
+    <div class="container" style="position:relative">
+        <span class="label" data-reveal>Got a project?</span>
+        <h2 id="cta-title" class="display cta-title" style="margin-top:1.4rem">Let&rsquo;s create something <em>amazing</em> together.</h2>
+        <p class="cta-sub" data-reveal>Whether you need a website, a video, or a complete digital strategy &mdash; I&rsquo;m here to help.</p>
+        <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap" data-reveal>
+            <a class="btn btn--solid" href="contact.html" data-magnetic="0.3">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <button class="btn" data-copy-email data-magnetic="0.3">Copy email</button>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-big">Have a project in mind?<br>Let&rsquo;s make it happen.</p>
+                <a class="btn btn--sm" href="contact.html" data-magnetic="0.25">Start a conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+            <div><h4>Pages</h4><ul><li><a class="link-underline" href="index.html">Home</a></li><li><a class="link-underline" href="projects.html">Projects</a></li><li><a class="link-underline" href="about.html">About</a></li><li><a class="link-underline" href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Elsewhere</h4><ul>
+                <li><a class="link-underline" href="https://www.linkedin.com/in/ian-jay-macaraeg-761606292/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a class="link-underline" href="https://www.facebook.com/jayiannnn" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a class="link-underline" href="https://www.instagram.com/_yanjeiii/" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a class="link-underline" href="https://www.threads.com/@_yanjeiii" target="_blank" rel="noopener">Threads</a></li>
+            </ul></div>
+            <div><h4>Contact</h4><ul>
+                <li><a class="link-underline" href="mailto:macaraegianjay2003@gmail.com">macaraegianjay2003@gmail.com</a></li>
+                <li><button class="link-underline" data-copy-email>Copy email</button></li>
+                <li><button class="link-underline" data-palette>Command menu <span class="kbd">Ctrl K</span></button></li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; <span data-year>2026</span> Ian Jay Macaraeg. All rights reserved.</span>
+            <span class="clock"><span class="pulse-dot"></span>Manila &middot; <span data-clock>--:--:--</span></span>
+            <button class="to-top link-underline" data-top>Back to top &uarr;</button>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
